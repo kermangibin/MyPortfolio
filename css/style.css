@@ -426,9 +426,9 @@ input[type=number] {
     }
 
     .navbar {
-        position: fixed;
+        position: absolute;
         top: 100%;
-        left: 0;
+        left: 0%;
         width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
