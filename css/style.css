@@ -28,6 +28,11 @@ body {
    color: var(--text-color);
 }
 
+body container {
+   background: var(--bg-color);
+   color: var(--text-color);
+}
+
 section {
    min-height: 100vh;
    padding: 10rem 9% 2rem;
@@ -458,7 +463,6 @@ input[type=number] {
     .home-img {
       width: 70vw;
       margin-top: 4rem;
-      text-align: center;
     }
 
     .about {
