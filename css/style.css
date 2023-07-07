@@ -420,7 +420,7 @@ input[type=number] {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     #menu-icon{
         display: block;
     }
