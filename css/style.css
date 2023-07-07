@@ -463,6 +463,7 @@ input[type=number] {
     .home-img {
       width: 70vw;
       margin-top: 4rem;
+      text-align: center;
     }
 
     .about {
