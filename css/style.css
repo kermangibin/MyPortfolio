@@ -502,7 +502,7 @@ input[type=number] {
    }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
    .home-img img {
       width: 70vw;
       height: auto;
