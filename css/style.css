@@ -426,7 +426,7 @@ input[type=number] {
     }
 
     .navbar {
-        position: absolute;
+        position: fixed;
         top: 100%;
         left: 0;
         width: 100%;
@@ -440,7 +440,6 @@ input[type=number] {
     .navbar.active {
         display: block;
     }
-
 
     .navbar a {
         display: block;
