@@ -344,10 +344,10 @@ input[type=number] {
 
 .contact form textarea {
     resize: none;
+    margin-bottom: 3rem;
 }
 
 .contact form.btn {
-    margin-top: 8rem;
     cursor: pointer;
 }
 
