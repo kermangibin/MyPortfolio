@@ -35,8 +35,11 @@
       <h3>Hello, It's Me</h3>
       <h1>Kier Niño Mangibin</h1>
       <h3>I'm a <span class="multiple-text"></span></h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iusto officiis temporibus pariatur praesentium.
-        Numquam suscipit aut officiis ipsum sit illo nihil iusto sed corporis, eos, ratione dolorem praesentium quae!
+      <p>I am equipped with the skills and expertise to meet your needs. With a strong background in computer science
+        and a passion for technology, I am committed to delivering high-quality work and ensuring exceptional client
+        satisfaction. Let me assist you in achieving your goals and freeing up your valuable time so that you can focus
+        on what matters most. Partner with me and experience the convenience and efficiency of a reliable Virtual
+        Assistant!
       </p>
       <div class="social-media">
         <a href="https://www.facebook.com/kermangibin"><i class='bx bxl-facebook'></i></a>
@@ -63,12 +66,43 @@
     <div class="about-content">
       <h2 class="heading">About <span>Me</span></h2>
       <h3>Virtual Assistant!</h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente molestiae beatae perspiciatis nostrum
-        distinctio adipisci reiciendis esse maxime? Magni quibusdam similique quasi? Autem aperiam quo officia iste
-        veritatis vitae qui?</p>
-      <a href="#" class="btn">Read More</a>
+      <p>Hello! I'm Kier Niño Mangibin, a dedicated and passionate individual with a strong interest in technology and a
+        knack for problem-solving. As a Virtual Assistant, I am committed to delivering exceptional support and helping
+        clients achieve their goals.</p>
+      <span id="more" style="display: none;">
+        <p>Let's work together to achieve your goals and make your vision a reality. With a background in computer
+          science and a keen eye for detail, I excel in tasks
+          such as social media management, data organization, email and calendar management, presentation creation,
+          graphics design, copywriting, data entry, and video editing. I am a quick learner, always eager to expand my
+          skillset and adapt to new challenges. I thrive in dynamic environments, both independently and
+          collaboratively,
+          and I take pride in my ability to meet deadlines and exceed expectations. With a focus on professionalism,
+          efficiency, and open communication, I strive to build strong working relationships and contribute to the
+          success
+          of those I work with.</p>
+      </span>
+      <div class="btn" id="read-more-btn" onclick="toggleAboutText()">Read More</div>
+      <span id="dots"></span>
     </div>
   </section>
+
+  <script>
+    function toggleAboutText() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("read-more-btn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read More";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read Less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
 
   <!-- services section design -->
   <section class="services" id="services">
@@ -78,37 +112,83 @@
       <div class="services-box">
         <i class='bx bxs-paint'></i>
         <h3>Graphic Design</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A neque mollitia voluptatibus asperiores cum
-          labore,
-          tempore perspiciatis iusto soluta, corporis qui nisi pariatur. Illo expedita pariatur porro et aperiam.
-          Facilis!
-        </p>
-        <a href="#" class="btn">Read More</a>
+        <p>I offer basic graphic design services to help you with your visual needs. While I may not have extensive
+          professional experience, I can assist you in creating simple and visually appealing graphics for your personal
+          or small-scale projects.</p>
+        <div href="#" class="btn" onclick="toggleServiceText(this)">Read More</div>
+        <span class="more-text" style="display: none;">
+          <p> Whether it's designing logos, social media graphics, or basic marketing materials, I
+            will work closely with you to understand your vision and create designs that align with your preferences.
+          </p>
+        </span>
       </div>
 
+      <script>
+        function toggleServiceText(btn) {
+          var moreText = btn.parentNode.getElementsByClassName("more-text")[0];
+          if (moreText.style.display === "none") {
+            moreText.style.display = "block";
+            btn.innerHTML = "Read Less";
+          } else {
+            moreText.style.display = "none";
+            btn.innerHTML = "Read More";
+          }
+        }
+      </script>
+
       <div class="services-box">
-        <i class='bx bx-code-alt'></i>
-        <h3></h3>
-        <h3>Web Design</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A neque mollitia voluptatibus asperiores cum
-          labore,
-          tempore perspiciatis iusto soluta, corporis qui nisi pariatur. Illo expedita pariatur porro et aperiam.
-          Facilis!
-        </p>
-        <a href="#" class="btn">Read More</a>
+        <i class='bx bxl-trip-advisor'></i>
+        <h3>Management</h3>
+        <p>I provide social media management services to help you establish a presence on various
+          platforms. While I may not have experience in managing large-scale accounts, I can assist you
+          with basic tasks such as content creation, scheduling posts </p>
+        <div href="#" class="btn" onclick="toggleServiceText(this)">Read More</div>
+        <span class="more-text" style="display: none;">
+          <p> scheduling posts, and engaging with your audience. I will work diligently to
+            understand your brand and target audience, ensuring that your social media presence remains consistent and
+            engaging.
+          </p>
+        </span>
       </div>
+
+      <script>
+        function toggleServiceText(btn) {
+          var moreText = btn.parentNode.getElementsByClassName("more-text")[0];
+          if (moreText.style.display === "none") {
+            moreText.style.display = "block";
+            btn.innerHTML = "Read Less";
+          } else {
+            moreText.style.display = "none";
+            btn.innerHTML = "Read More";
+          }
+        }
+      </script>
 
       <div class="services-box">
         <i class='bx bxs-videos'></i>
-        <h3></h3>
         <h3>Video Editing</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A neque mollitia voluptatibus asperiores cum
-          labore,
-          tempore perspiciatis iusto soluta, corporis qui nisi pariatur. Illo expedita pariatur porro et aperiam.
-          Facilis!
-        </p>
-        <a href="#" class="btn">Read More</a>
+        <p>I offer basic video editing services to help you polish your raw footage. Although I may not have
+          professional experience in video editing, I can assist you with basic editing tasks such as trimming clips,
+          adding transitions, and enhancing audio quality.</p>
+        <div href="#" class="btn" onclick="toggleServiceText(this)">Read More</div>
+        <span class="more-text" style="display: none;">
+          <p>While my skills may be limited, I will work closely with you to understand your requirements and create a
+            final product that meets your needs.</p>
+        </span>
       </div>
+
+      <script>
+        function toggleServiceText(btn) {
+          var moreText = btn.parentNode.getElementsByClassName("more-text")[0];
+          if (moreText.style.display === "none") {
+            moreText.style.display = "block";
+            btn.innerHTML = "Read Less";
+          } else {
+            moreText.style.display = "none";
+            btn.innerHTML = "Read More";
+          }
+        }
+      </script>
 
 
 
