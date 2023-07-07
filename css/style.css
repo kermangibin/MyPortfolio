@@ -28,7 +28,7 @@ body {
    color: var(--text-color);
 }
 
-body container {
+body .container {
    background: var(--bg-color);
    color: var(--text-color);
 }
@@ -78,6 +78,7 @@ section {
    font-size: 3.6rem;
    color: var(--text-color);
    display: none;
+   justify-items: end;
 }
 
 .home {
@@ -510,6 +511,7 @@ input[type=number] {
 
    .about-img img {
       width: 90vw;
+      height: auto;
    }
 
    .footer {
